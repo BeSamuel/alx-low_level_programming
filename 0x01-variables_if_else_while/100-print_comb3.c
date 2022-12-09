@@ -25,13 +25,13 @@ int main(void)
 
 				if (c + d != 17)
 				{
-					putcahr(',');
+					putchar(',');
 					putchar(' ');
 				}
 			}
-			c++
+			c++;
 		}
-		d++
+		d++;
 	}
 	putcar('\n');
 	return (0);
