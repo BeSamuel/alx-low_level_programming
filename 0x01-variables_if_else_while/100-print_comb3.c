@@ -33,6 +33,6 @@ int main(void)
 		}
 		d++;
 	}
-	putcar('\n');
+	putchar('\n');
 	return (0);
 }
