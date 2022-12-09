@@ -21,7 +21,7 @@ int main(void)
 			while (c < 10)
 			{
 				putchar('0' + d);
-				putcahr('0' + c);
+				putchar('0' + c);
 
 				if (c + d != 17)
 				{
