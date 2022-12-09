@@ -1,21 +1,21 @@
 #include <stdio.h>
-
 /**
- * main - Print the alphabet in lowercase letters, except for e and q
- *
- * Return: Always 0 (Success)
+ * main - main block
+ * Description: get a random number and check its
+ * Return: 0
  */
 int main(void)
 {
-	char aphabet;
+	char c = 'a';
 
-	for (aphabet = 'a'; aphabet <= 'z'; aphabet++)
+	while (c <= 'z')
 	{
-	if (aphabet != 'e' && aphabet != 'q')
-	putchar(aphabet);
+		if (c != 'e' && c !c 'q')
+		{
+			putchar(c);
+		}
+		c++;
 	}
-
 	putchar('\n');
-
-         return (0);
+	return (0);
 }
