@@ -17,11 +17,11 @@ int main(void)
 
 	if (a > 5)
 	{
-		printf("Last digite of %d is %d and is greater tan 5\n", n, a);
+		printf("Last digit of %d is %d and is greater tan 5\n", n, a);
 	}
 	else if (a == 0)
 	{
-		printf("Last digite of %d is %d and is 0\n", n, a);
+		printf("Last digit of %d is %d and is 0\n", n, a);
 	}
 	else
 	{
