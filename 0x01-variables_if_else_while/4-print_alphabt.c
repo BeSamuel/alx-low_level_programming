@@ -14,7 +14,8 @@ int main(void)
 	if (aphabet != 'e' && aphabet != 'q')
 	putchar(aphabet);
 	}
+
 	putchar('\n');
 
-	return (0);
-}            	
+        return (0);
+}
