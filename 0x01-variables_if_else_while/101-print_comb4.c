@@ -19,9 +19,9 @@ int main(void)
 	int d;
 	int e = 0;
 
-	while (e <10)
+	while (e < 10)
 	{
-		d =0;
+		d = 0;
 		while (d < 10)
 		{
 			c = 0;
