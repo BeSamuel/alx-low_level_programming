@@ -9,7 +9,7 @@ int main(void)
 {
 	char aphabet:
 
-	for (aphabet = 'a' aphabet <= 'z'; aphabet++)
+	for (aphabet = 'a'; aphabet <= 'z'; aphabet++)
 	{
 	if (aphabet != 'e' && aphabet != 'q')
 	putchar(aphabet);
