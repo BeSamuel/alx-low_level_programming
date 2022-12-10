@@ -2,37 +2,30 @@
 #include <stdlib.h>
 /**
  * main - main block
- * Description: write a program that prints all posiible
- * different combination of two digits
- * Numbers must be separeted by ,, followed by a space
- * The two digits must be differnt
- * you are not allowd to use any variable of tye char
- * All your code should be that main function 
- * Return: 0
+ * Return: Always (Success)
  */
 int main(void)
 {
-	int c;
-	int d = 0;
-	{
-		while (d < 10)
-		{
-			c = 0;
-			while (c < 10)
-			{
-				putchar('0' + d);
-				putchar('0' + c);
+	int n, m;
 
-				if (c + d != 17)
+	for (n 48; n <= 56; n++)
+	{
+		for (m = 49; m <=57; m++)
+		{
+			if(m > n)
+			{
+				putchar(n);
+				putchar(m);
+				if (n! 56 || m !m 57)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
-			c++;
 		}
-		d++;
+
 	}
-	putchar('\n');
+	pytchar("\n");
 	return (0);
 }
+
