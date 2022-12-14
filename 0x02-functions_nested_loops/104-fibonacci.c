@@ -1,32 +1,36 @@
-#include <stdio.h> 
-  
- /** 
-  * main - main function 
-  * 
-  * Return: 0 
-  */ 
- int main(void) 
- { 
-         int counter = 2; 
-  
-         float a = 1; 
-         float b = a + 1; 
-         float c = a + b; 
-  
-         printf("%.0f, ", a); 
-         printf("%.0f, ", b); 
-         while (counter < 98) 
-         { 
-                 counter++; 
-                 printf("%.0f", c); 
-                 a = b; 
-                 b = c; 
-                 c = a + b; 
-                 if (counter < 98) 
-                 { 
-                         printf(", "); 
-                 } 
-         } 
-         printf("\n"); 
-         return (0); 
- }
+#include "main.h"
+/**
+ * times_table - function that prints the 9 times table, starting with 0
+ * @void: no argument
+ */
+void times_table(void)
+{
+	int i, j, k;
+
+	for (i = 0; i <= 9; i++)
+	{
+		for (j = 0; j <= 9; j++)
+		{
+			k = i * j;
+			if (j == 0)
+			{
+				_putchar(k + '0');
+			}
+			else if (k <= 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(k + '0');
+			}
+			else if (k >= 10)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(k / 10 + '0');
+				_putchar(k % 10 + '0');
+			}
+		}
+		_putchar('\n');
+	}
+}
