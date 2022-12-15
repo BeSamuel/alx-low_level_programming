@@ -1,17 +1,23 @@
-
-
 #include "main.h"
-/**
- * print_numbers - prints the numbers
- *
- */
-void print_numbers(void)
-{
-	int i;
 
-	for (i = '0'; i <= '9'; i++)
+/**
+ * print_diagonal - print diagonal line n times.
+ * @n: times diagonal line is printed.
+ * Return: no return.
+ */
+void print_diagonal(int n)
+{
+	int i, j;
+
+	for (i = 0; < n; i++)
 	{
-		_putchar(i);
+		for (j = 0; j < i; j++)
+		{
+			_putchar(' ');
+		}
+		_putchar(92);
+		if (i < (n - 1))
+			_putchar('\n');
 	}
 	_putchar('\n');
 }
